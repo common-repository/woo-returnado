@@ -1,0 +1,105 @@
+<dl>
+    <dt>v.0.4.7.34</dt>
+    <dd>Only variable or simple products are synced (physically purchasable ones)</dd>
+    <dt>v.0.4.7.33</dt>
+    <dd>Fixed currency rates</dd>
+    <dt>v.0.4.7.32</dt>
+    <dd>Response with published and in-stock products only on search request to ../products end point</dd>
+    <dd>Handle fatal exceptions from Fortnox</dd>
+    <dd>Include updatedAfter parameter into API end points</dd>
+    <dd>New stock management rules for exchange orders</dd>
+    <dd>New error handling approach</dd>
+    <dd>New logic on refund with previous remainder (difference between net value and rounding precision index)</dd>
+    <dt>v.0.4.7.23</dt>
+    <dd>New Klarna gateway compatibility</dd>
+    <dd>Minimum price rounding precision set to 2 decimals</dd>
+    <dd>Trailing zeroes cut option added</dd>
+    <dd>Refunding items validation fixed</dd>
+    <dt>v.0.4.7.22</dt>
+    <dd>WPML support added for storing non-rounded values</dd>
+    <dd>WP Admin applying coupon for the existing order is now processed</dd>
+    <dt>v.0.4.7.21</dt>
+    <dd>Items with disabled stock management are available for exchange</dd>
+    <dd>Fixed collecting related products issue (stack overflow)</dd>
+    <dd>Added original title and selected attributes to every order item for new orders</dd>
+    <dd>Added sku filed synchronization to every product/product variation and order item (if set)</dd>
+    <dd>Added variation title to every order item</dd>
+    <dd>Sequential order ID is added to preliminary order response</dd>
+    <dd>Additional user sync on syncing the order</dd>
+    <dt>v.0.4.7.2</dt>
+    <dd>Fixed global rounding issue</dd>
+    <dd>Fixed tax rounding issue</dd>
+    <dd>Fixed total refund rounding issue</dd>
+    <dd>Added Fortnox sync error handling on refund</dd>
+    <dt>v.0.4.7.1</dt>
+    <dd>Manage stock check fixed on reconversion</dd>
+    <dd>Full synchronization functionality added to backend</dd>
+    <dt>v.0.4.7</dt>
+    <dd>Sequential orders compatibility added for /orders end point and synchronization</dd>
+    <dd>Guest  checkout mode for woocommerce is fully compatible now</dd>
+    <dd>Partial sync: only not synced previously objects will be synced now in total sync</dd>
+    <dd><a style="cursor:pointer" onclick="jQuery('div#more_changes_log').slideToggle()">More...</a></dd>
+    <div id="more_changes_log" style="display:none">
+        <dt>v.0.4.6.3</dt>
+        <dd>Product attributes disabled</dd>
+        <dd>Product search optimized</dd>
+        <dt>v.0.4.6.2</dt>
+        <dd>Fix for backorders</dd>
+        <dd>Fix for store credit</dd>
+        <dd>Product full description added to the /products end point</dd>
+        <dd>Product attributes added (and fixed)</dd>
+        <dt>v.0.4.6.1</dt>
+        <dd>Plugin constants fixed (default hosts)</dd>
+        <dd>Remote hosts validation enabled</dd>
+        <dt>v.0.4.6</dt>
+        <dd>Option "Original products with negative diminished prices " fixed</dd>
+        <dd>Store credit update on purchase fixed</dd>
+        <dd>Search by title, description for /products and by name, email for /customers end points added</dd>
+        <dd>Yahoo! Finance deprecated currency service fixed. Now using "fixer" service.</dd>
+        <dd>Added multicurrency support for Woocommerce Currency Switcher (WOOCS)</dd>
+        <dd>For proper order sync, Klarna option "Send discounts as separate items" is overridden since now</dd>
+        <dt>v.0.4.5</dt>
+        <dd>Deep loggin enabled</dd>
+        <dd>Fixed collecting the items for discounted orders</dd>
+        <dd>Added "patch" end point</dd>
+        <dd>Alternative auth header enabled</dd>
+        <dd>Fixed hosts for Returnado admin panel, default hosts</dd>
+        <dd>Fixed compatibility with ERP (Fortnox) on return to store credit</dd>
+        <dd>Orders total <i>balance</i> fix</dd>
+        <dd>Klarna coupon update fix</dd>
+        <dd>Removed coupon personalization</dd>
+        <dd>Basic Auth in test mode for front end</dd>
+        <dd>Default settings changed</dd>
+        <dd>Hosts options for widget, admin panel and synchronization added</dd>
+        <dt>v.0.4.4</dt>
+        <dd>Diminishing prices fixed</dd>
+        <dd>Reconversion order total calculation fixed</dd>
+        <dd>Auth fix</dd>
+        <dd>Return order handling revised according to the latest pseudo code</dd>
+        <dd>Fixed 0 diminished price return items tax</dd>
+        <dd>Fixed refund item tax calculation for several refunding items</dd>
+        <dd>Checking refunding items for quantity enabled</dd>
+        <dd>Options not saving bug fixed</dd>
+        <dd>Store credit logic changed: new amount is always received from Returnado side in newGift value</dd>
+        <dt>v.0.4.3</dt>
+        <dd>Fixed refund on exchange</dd>
+        <dd>Fixed duplicate store credit refund on exchange</dd>
+        <dd>Fixed refund on approving after exchange</dd>
+        <dd>Pagination order is added to all end points as "order" parameter with possible values: "asc", "desc". Default is "asc".</dd>
+        <dd>Fixed approve preliminary - no payment for reminder </dd>
+        <dd>Fixed order refund to store credit </dd>
+        <dd>Host option removed from settings page</dd>
+        <dd>Auth updated - no .htaccess edit is needed</dd>
+        <dt>v.0.4.2</dt>
+        <dd>New logic for /returnorder end point (approving preliminary while refunding on exchanged)</dd>
+        <dd>Version log started</dd>
+        <dd>Checking refunded order items for total refund amount</dd>
+        <dd>Returned items are marked as refunded with total 0 on refund to exchanged</dd>
+        <dt>v.0.4.1</dt>
+        <dd>API end points fixed for credit</dd>
+        <dd>changes on /order (for exchanged items ids) made</dd>
+        <dd>small bug fixes</dd>
+        <dt>v.0.4.0</dt>
+        <dd>WP REST API has been deployed</dd>
+    </div>
+</dl>

@@ -1,0 +1,160 @@
+﻿*front-end styles*
+
+ .client-table{
+	width:100%;
+	border:none;
+	border-spacing:0;
+ }
+ .client-table td{
+	border:none !important;
+	border-bottom:2px solid #ccc !important;
+	text-align:center;
+	vertical-align:middle;
+	padding:8px !important;
+	height:80px;
+ }
+ 
+ .clients-info-preorder{
+	 display:none;
+	 text-align:left !important;
+ }
+ 
+ .clear-table{
+	 width:100%;
+	 border:none !important;
+	 border-spacing:0 !important;
+ }
+ 
+ .clear-table td{
+	 border:none !important;
+	 text-align:left !important;
+ }
+ 
+ .cancel-button{
+	 float:right;
+	 background:none;
+	 text-transform: capitalize;
+	 font-size:18px;
+	 padding:9px;
+	 border:1px solid #ccc !important;
+	 color:#ccc;
+	  -webkit-transition:500ms ease;
+    -moz-transition:500ms ease;
+    -o-transition:500ms ease;
+    transition:500ms ease;
+ }
+ 
+ .cancel-button:hover{
+	background:#ccc;
+	color:#fff;
+ }
+
+  select{
+    padding: 9px;
+   @border:1px solid #777;
+   width:100%;
+   cursor:pointer;
+   font-family:Arial;
+   font-weight:bold;
+   color:#777;
+  }
+  select option{
+	margin:9px;
+	font-family:Arial;
+	font-weight:bold;
+  }
+  select option:disabled{
+	color:#777;
+  }
+  label{
+	font-family:Arial;
+	font-weight:bold;
+  }
+  fieldset{
+	@border:1px solid #777;
+  }
+  fieldset legend{
+	font-family:Arial;
+	padding:0.3em;
+	font-weight:bold;
+  }
+  
+#dnap_processing{
+	display:none;
+	width:100%;
+	height:100%;
+	position:fixed;
+	text-align:center;
+	top:0px;
+	left:0px;
+	margin:0px;
+	padding:0px;
+	padding-top:25%;
+	text-indent:0;
+	background-color:#fff;
+	filter: alpha(opacity=95); 
+    -khtml-opacity: 0.95;     
+    -moz-opacity: 0.95;       
+    opacity: 0.95;
+	z-index:99999 !important;
+}
+
+#search_field {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../../img/search_icon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 8px 8px 8px 40px;
+	margin:5px 0px 10px 0px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	autocomplete:off;
+}
+
+
+#search_field:focus {
+    width: 100%;
+}
+
+input[type='checkbox'].delbox{
+	border:2px solid red;
+}
+
+input[type='checkbox'].delbox:checked:before{
+	content: "✘";
+	position: relative;
+	  top: 0; left: 2px;
+	  font-size: 13px;
+	  color: white;
+	  transition: all .2s;
+}
+
+input[type='checkbox'].delbox:checked{
+	background:red;
+}
+
+input[type='checkbox'].delbox:disabled{
+	border:2px solid #ccc;
+}
+
+input[type='checkbox'].insbox{
+	border:2px solid lime;
+}
+
+input[type='checkbox'].insbox:checked{
+	background:lime;
+}
+
+input[type='checkbox'].insbox:checked:before{
+	content: "✔";
+	position: relative;
+	top: 0; left: 2px;
+	font-size: 13px;
+	color: white;
+	transition: all .2s;
+}
